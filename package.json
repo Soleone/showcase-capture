@@ -1,6 +1,6 @@
 {
   "name": "@soleone/showcase-capture",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Record a web app as a looping animated WebP with agent-browser and FFmpeg.",
   "license": "MIT",
   "author": "Soleone",
