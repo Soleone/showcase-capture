@@ -1,0 +1,50 @@
+{
+  "name": "@soleone/showcase-capture",
+  "version": "0.0.0",
+  "description": "Record a web app as a looping animated WebP with agent-browser and FFmpeg.",
+  "license": "MIT",
+  "author": "Soleone",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Soleone/showcase-capture.git"
+  },
+  "homepage": "https://github.com/Soleone/showcase-capture#readme",
+  "bugs": "https://github.com/Soleone/showcase-capture/issues",
+  "keywords": [
+    "demo",
+    "recording",
+    "webp",
+    "agent-browser",
+    "showcase"
+  ],
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    ".": "./src/capture.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "src/",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test",
+    "release": "release-it",
+    "release:dry-run": "npm test && release-it --dry-run"
+  },
+  "devDependencies": {
+    "@release-it/conventional-changelog": "^10.0.6",
+    "release-it": "^19.2.4"
+  },
+  "overrides": {
+    "release-it": {
+      "undici": "^7.30.0"
+    }
+  }
+}
